@@ -1,3 +1,8 @@
+//Croasmun Zachery
+// SDI Assignment 2 1302
+// Story of the wizards
+
+
 alert("The story of 4 Brave Wizards!");
 
 console.log("Our story begins as our 4 hero’s are finishing off a fight against dragons.");
@@ -25,7 +30,7 @@ killOneEnimy(2);
 killOneEnimy(3);
 
 //story line in here
-console.log();
+console.log("After the battle with the dragons our hero’s come to a choice in which way they each will travel. Although our hero’s chose different routes they all un knowingly head towards the evil king.");
 
 
 var pathToTake = ["North", "South", "East", "West"],
@@ -38,7 +43,7 @@ var whichPath = function(pathNumber){
 	console.log(wizard + " decided upon taking the path to the " + path + " and walked for " + days);
 	
 	for(var daysOfTravel = 0; daysOfTravel < days; daysOfTravel += 1){
-		var daysLeft = daysOfTravel - days;
+		var daysLeft = days - daysOfTravel;
 		console.log(daysOfTravel + " Days Traveled! " + daysLeft + " Days left on his journey! ");	
 	};
 	return console.log("We made it alive!");
@@ -51,7 +56,7 @@ whichPath(3);
 
 
 // more story line here
-console.log();
+console.log("After days of travel our mighty wizards arrive in the capital city to face the evil king.");
 
 var spellToUse = ["Death", "Paralyses", "Fear", "Shielding"],
 	spellTime = [8, 4, 6, 2];
@@ -77,4 +82,6 @@ spellUsed(2);
 spellUsed(3);
 
 //end of story
-Console.log();
+console.log("The Battle raged but our mighty Wizards were able to work together and defeat the evil king taking back the kingdom. ");
+
+console.log("THE END!");
